@@ -1,0 +1,174 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+  float: right;
+  display: flex;
+  color: rgb(0, 0, 83);
+  justify-content: space-around;
+  padding: -1.5% 2.5%;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateY(-100px);
+  width:13.4%;
+  max-width: 200%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 955px) {
+  .topnav a{
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: FIXED;
+    right: 0;
+    top: 0;
+    TRANSFORM:TRANSLATEY(220%)
+  }
+  .topnav.responsive a {
+    float: none;
+    display: inline-FLEX;
+    text-align: left;
+    transform: translateY(-30%);
+    WIDTH:28%;
+    justify-content: space-around;
+  }
+  .topnav.responsive a BUTTON{
+    PADDING:1%;
+    transform: TRANSLATEY(-10%);
+  }
+
+}
+.img1{
+  border-radius: 50%;
+  height:80px;
+  width:75px;
+  transform: translate(10%,-15%);
+}
+.img2{
+  border-radius: 50%;
+  height:102px;
+  width:105px;
+  transform: translate(10%,-1%);
+}
+
+
+  button{
+background-color: rgb(0, 0, 99);
+color:white;
+transform: translateY( -9.888px);
+padding: 3%;
+width:100%;
+border-radius: 12px;
+border-color: black;
+
+font-weight: bold;
+font-size:medium;
+
+}
+
+.NSS{
+    display:flex;
+    WIDTH:20%;
+justify-content: space-between;
+position:relative;
+    color:rgb(0, 0, 99);
+    font-weight: bold;
+    list-style: none;
+}
+.NSS1{
+  font-size:200%;
+    font-weight: bold;
+    transform: translate(300%,-170%);
+    position:fixed;
+}
+.NSS2{
+  font-size:88%;
+    font-weight: bold;
+    transform: translate(580%,-200.4%);
+    position:fixed;
+    
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <div class="img-section">
+    <img src="BLOOD_DONATION_CAMP.jpeg" class="img1">
+    <img src="National-Service-Scheme_Preview.png" alt="" class="img2">
+ 
+
+  <ul class="NSS">  
+    <li class="NSS1"> <br> NSS </li>
+<li class="NSS2"> <br>BITS 
+<br>PILANI
+</li>
+</ul>
+</div>
+<div class="a">
+    <a href="Contact Us"><button type="submit">Contact Us</button> </a>
+    <a href="#Mythbusters">Mythbusters</a>
+    <a href="#Steps to Donate">Steps to Donate</a>
+    <a href="#Timeline">Timeline</a>
+  <a href="#home" class="active">Home</a>
+
+ 
+ 
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+
+<div style="padding-left:16px">
+  <h2>NSS NAVBAR</h2>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
